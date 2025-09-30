@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Using Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    table {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    td {
+      padding: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .submit-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 4px;
+    }
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Register" class="submit-btn">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
